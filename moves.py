@@ -43,7 +43,7 @@ kit.servo[3].angle = None
 
 # play sound
 pygame.mixer.init()
-pygame.mixer.music.load("sound.mp3")
+pygame.mixer.music.load("./sound.mp3")
 pygame.mixer.music.play()
 while pygame.mixer.music.get_busy() == True:
         continue           
