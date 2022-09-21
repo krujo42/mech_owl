@@ -43,7 +43,7 @@ kit.servo[3].angle = None
 
 
 # play sound
-file_path = os.path.realpath(__file__)
+file_path = os.path.dirname(__file__)
 pygame.mixer.init()
 pygame.mixer.music.load(os.path.join(file_path,"sound.mp3"))
 pygame.mixer.music.play()
