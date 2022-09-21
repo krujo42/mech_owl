@@ -1,1 +1,5 @@
-# Code for owl. simple moves and a sound file
+# Code for mech owl. 
+simple moves and plays a sound file
+
+## OS settings
+script will be executed over a cronjob
