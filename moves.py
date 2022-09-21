@@ -1,6 +1,7 @@
 import pygame
 import time
 import random
+import os
 from adafruit_servokit import ServoKit
 from time import sleep
 
@@ -42,8 +43,9 @@ kit.servo[3].angle = None
 
 
 # play sound
+currentWorkDir = os.getcwd()
 pygame.mixer.init()
-pygame.mixer.music.load("./sound.mp3")
+pygame.mixer.music.load(os.path.join(currentWorkDir,"sound.mp3"))
 pygame.mixer.music.play()
 while pygame.mixer.music.get_busy() == True:
         continue           
