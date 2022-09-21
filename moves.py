@@ -43,9 +43,9 @@ kit.servo[3].angle = None
 
 
 # play sound
-currentWorkDir = os.getcwd()
+file_path = os.path.realpath(__file__)
 pygame.mixer.init()
-pygame.mixer.music.load(os.path.join(currentWorkDir,"sound.mp3"))
+pygame.mixer.music.load(os.path.join(file_path,"sound.mp3"))
 pygame.mixer.music.play()
 while pygame.mixer.music.get_busy() == True:
         continue           
